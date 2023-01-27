@@ -1,0 +1,85 @@
+body {
+  background: #1c1c1c;
+}
+.titulo_nu_kenzie_home {
+  color: white;
+  margin-bottom: 4px;
+}
+.span_nu_home {
+  color: #fd377e;
+}
+.titulo_financas {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 48px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.span_forma_rapida {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.botao_iniciar_home {
+  padding: 13px 20px;
+  gap: 10px;
+  background: #fd377e;
+  border: 2px solid #fd377e;
+  border-radius: 8px;
+  width: 241px;
+  height: 48px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+@media (max-width: 700px) {
+  .botao_iniciar_home {
+    width: 150%;
+    margin-left: -70px;
+  }
+}
+.div_titulos_botao_home {
+  display: flex;
+  flex-direction: column;
+  margin-right: -200px;
+  margin: 0 auto;
+}
+@media (max-width: 700px) {
+  .div_titulos_botao_home {
+    margin-left: 100px;
+    margin: 0 auto;
+  }
+}
+.div_tudo_home {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  .div_tudo_home {
+    flex-direction: column;
+  }
+}
+.img_home {
+  margin-top: 60px;
+  margin-right: 140px;
+  width: 530px;
+  height: 530px;
+}
+@media (max-width: 700px) {
+  .img_home {
+    width: 348px;
+    height: 348px;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+}

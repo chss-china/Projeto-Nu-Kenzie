@@ -1,0 +1,36 @@
+.titulo_resumo_financeiro {
+  margin-left: -300px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #212529;
+}
+@media (max-width: 700px) {
+  .titulo_resumo_financeiro {
+    margin: 0 auto;
+    text-align: initial;
+    margin-right: 200px;
+  }
+}
+li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.titulo_sem_lancamento {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+  color: #343a40;
+  margin-right: 160px;
+}
+.img_sem_lancamento {
+  width: 562px;
+  height: 331px;
+}
