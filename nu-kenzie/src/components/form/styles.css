@@ -6,7 +6,7 @@
   border-radius: 4px;
   margin-left: 90px;
 }
-.label_descricao {
+.label_description {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -18,7 +18,7 @@
   margin-right: 240px;
   margin-bottom: 20px;
 }
-.input_descricao {
+.input_description {
   padding: 0px 16px;
   gap: 10px;
   width: 280px;
@@ -33,7 +33,7 @@
   color: #868e96;
   margin-left: 20px;
 }
-.span_exemplo {
+.span_example {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -44,23 +44,23 @@
   margin-right: 160px;
   margin-bottom: 40px;
 }
-.div_descricao_valor_exemplo {
+.div_description_value_example {
   display: flex;
   flex-direction: column;
 }
 @media (max-width: 700px) {
-  .div_descricao_valor_exemplo {
+  .div_description_value_example {
     margin: 0 auto;
     max-width: 100%;
     width: 100%;
   }
 }
 
-.inputs_label_valor_botao {
+.inputs_label_value_button {
   display: flex;
   position: relative;
 }
-.label_valor {
+.label_value {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -70,7 +70,7 @@
   margin-top: 200px;
   margin-left: -45px;
 }
-.input_valor {
+.input_value {
   width: 128px;
   background: #f8f9fa;
   border: 2px solid #f8f9fa;
@@ -78,7 +78,7 @@
   height: 40px;
   margin-left: 20px;
 }
-.tipo_valor {
+.type_value {
   width: 128px;
 
   background: #f8f9fa;
@@ -92,7 +92,7 @@
   color: #343a40;
   height: 46px;
 }
-.botao_inserir_valor {
+.button_insert_value {
   width: 314px;
   height: 48px;
   color: white;
@@ -102,7 +102,7 @@
   margin-left: 20px;
   margin-top: 20px;
 }
-.tipo_valor_label {
+.type_value_label {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -111,7 +111,7 @@
   color: #212529;
   margin-left: -30px;
 }
-.div_label_tipo_valor {
+.div_label_type_value {
   display: flex;
   flex-direction: column;
   align-items: center;

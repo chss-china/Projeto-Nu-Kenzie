@@ -6,21 +6,21 @@
   align-items: center;
   height: 88px;
 }
-.span_nu_titulo {
+.span_nu_title {
   color: #fd377e;
 }
-.titulo_kenzie {
+.title_kenzie {
   margin-left: 190px;
   margin-right: 740px;
   color: white;
 }
 @media (max-width: 1115px) {
-  .titulo_kenzie {
+  .title_kenzie {
     margin: 0 auto;
     margin-left: 50px;
   }
 }
-.span_inicio {
+.span_start {
   background: #e9ecef;
   border: 1.4px solid #e9ecef;
   border-radius: 8px;
@@ -36,7 +36,7 @@
   color: #343a40;
 }
 @media (max-width: 1115px) {
-  .span_inicio {
+  .span_start {
     margin: 0 auto;
     margin-right: 10px;
   }

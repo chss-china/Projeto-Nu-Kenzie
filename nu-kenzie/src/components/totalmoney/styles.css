@@ -11,17 +11,17 @@
   border-radius: 4px;
   margin-left: 88px;
 }
-.div_valor_total {
+.div_value_total {
   display: flex;
   align-items: center;
 }
 @media (max-width: 700px) {
-  .div_valor_total {
+  .div_value_total {
     width: 100%;
     max-width: 100%;
   }
 }
-.p_valor_total {
+.p_value_total {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
@@ -31,7 +31,7 @@
   margin-left: 30px;
   margin-right: 180px;
 }
-.resultado_valor {
+.result_value {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
@@ -39,7 +39,7 @@
   line-height: 30px;
   color: #fd377e;
 }
-.span_valor_refere {
+.span_value_refer {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;

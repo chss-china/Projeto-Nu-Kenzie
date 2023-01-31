@@ -1,4 +1,4 @@
-.div_descricao_valor_x {
+.div_description_value_x {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,12 +7,12 @@
   width: 100%;
 }
 @media (max-width: 700px) {
-  .div_descricao_valor_x {
+  .div_description_value_x {
     display: flex;
     flex-direction: column;
   }
 }
-.descricao_lista {
+.description_list {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
@@ -21,12 +21,12 @@
   color: #212529;
 }
 @media (max-width: 700px) {
-  .descricao_lista {
+  .description_list {
     margin-top: 0px;
   }
 }
 @media (max-width: 700px) {
-  .descricao_lista {
+  .description_list {
     font-size: 20px;
     width: 100%;
     font-size: 20px;
@@ -35,7 +35,7 @@
     display: flex;
   }
 }
-.valor_lista {
+.value_list {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
@@ -44,11 +44,11 @@
   font-size: 16px;
 }
 @media (max-width: 700px) {
-  .valor_lista {
+  .value_list {
     margin-right: 250px;
   }
 }
-.tipo_lista {
+.type_list {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
@@ -60,12 +60,12 @@
   margin-right: 500px;
 }
 @media (max-width: 700px) {
-  .tipo_lista {
+  .type_list {
     margin-right: 280px;
     margin-top: 20px;
   }
 }
-.div_pai_lista {
+.div_father_list {
   width: 560px;
   height: 87px;
   background: #f8f9fa;
@@ -77,7 +77,7 @@
   padding: 15px;
 }
 @media (max-width: 700px) {
-  .div_pai_lista {
+  .div_father_list {
     width: 351px;
     height: 156px;
     margin: 0 auto;
@@ -87,21 +87,21 @@
     flex-direction: column;
   }
 }
-.fechar {
+.close {
   margin-left: 120px;
   background: #e9ecef;
   border-radius: 2.46154px;
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 @media (max-width: 700px) {
-  .fechar {
+  .close {
     margin-right: 380px;
     margin-top: 20px;
   }
 }
-.borda_left_entrada {
+.border_left_Prohibited {
   border-left: 4px solid #03b898;
 }
-.borda_left_saida {
+.border_left_exit {
   border-left: 4px solid #e9ecef;
 }

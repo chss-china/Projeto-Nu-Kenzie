@@ -1,4 +1,4 @@
-.titulo_resumo_financeiro {
+.titulo_financial_Summary {
   margin-left: -300px;
   margin-bottom: 5px;
   margin-top: 20px;
@@ -10,10 +10,11 @@
   color: #212529;
 }
 @media (max-width: 700px) {
-  .titulo_resumo_financeiro {
+  .titulo_financial_Summary {
     margin: 0 auto;
     text-align: initial;
-    margin-right: 200px;
+    margin-left: 130px;
+    font-size: 18px;
   }
 }
 li {
@@ -21,16 +22,29 @@ li {
   display: flex;
   flex-direction: column;
 }
-.titulo_sem_lancamento {
+.title_without_launchc {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
   line-height: 34px;
   color: #343a40;
-  margin-right: 160px;
+  margin-left: -148px;
 }
-.img_sem_lancamento {
+@media (max-width: 700px) {
+  .title_without_launchc {
+    margin: 0 auto;
+    margin-left: 77px;
+  }
+}
+.img_without_launchc {
   width: 562px;
   height: 331px;
+}
+@media (max-width: 700px) {
+  .img_without_launchc {
+    width: 375px;
+    height: 300px;
+    margin-left: 12px;
+  }
 }

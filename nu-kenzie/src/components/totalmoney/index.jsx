@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "./styles.css";
-function Valortotal({ listTransactions, setListTransactions }) {
+function Valuetotal({ listTransactions, setListTransactions }) {
   console.log(listTransactions);
 
-  const soma_total = listTransactions.reduce((accumulator, currentValue) => {
+  const total_sum = listTransactions.reduce((accumulator, currentValue) => {
     console.log(currentValue);
     if (currentValue.type === "") {
       currentValue.type = "entrada";
@@ -19,15 +19,15 @@ function Valortotal({ listTransactions, setListTransactions }) {
     <ul>
       <li className="li_total">
         <div className="div_total">
-          <div className="div_valor_total">
-            <p className="p_valor_total">Valor Total:</p>
-            <p className="resultado_valor">{soma_total}</p>
+          <div className="div_value_total">
+            <p className="p_value_total">Valor Total:</p>
+            <p className="result_value">{total_sum}</p>
           </div>
-          <span className="span_valor_refere">O valor se refere ao saldo</span>
+          <span className="span_value_refer">O valor se refere ao saldo</span>
         </div>
       </li>
     </ul>
   );
 }
 
-export default Valortotal;
+export default Valuetotal;

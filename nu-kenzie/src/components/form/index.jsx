@@ -1,11 +1,16 @@
+import { v4 as uuidv4 } from "uuid";
 import "./styles.css";
 import { useState } from "react";
+import { Buttons } from "../buttons/index";
+import { Selects } from "../selects";
+import { InputDescription } from "../inputs";
+import { InputValue } from "../inputs";
 function Form({ listTransactions, setListTransactions }) {
   //const [userInput, setUserInput] = userState("");
   const [inputValue, setInputvalue] = useState("");
   console.log(inputValue);
-  const [inputValueValor, setinputValueValor] = useState("");
-  console.log(inputValueValor);
+  const [inputValueValue, setinputValueValue] = useState("");
+  console.log(inputValueValue);
 
   const [inputValorType, setinputValorType] = useState("");
   console.log(inputValorType);
@@ -14,16 +19,13 @@ function Form({ listTransactions, setListTransactions }) {
     event.preventDefault();
     const obj = {
       description: inputValue,
-      value: Number(inputValueValor),
+      value: Number(inputValueValue),
       type: inputValorType,
+      id: uuidv4(),
     };
-
     console.log(obj);
     setListTransactions([...listTransactions, obj]);
-    /* adicionar_entradas(obj);
-    setInputvalue(obj);
-    setinputValueValor(obj);
-    setinputValorType(obj);*/
+    console.log(listTransactions);
   }
 
   return (
@@ -31,56 +33,39 @@ function Form({ listTransactions, setListTransactions }) {
       <li>
         <form onSubmit={handleOnSubmit}>
           <div className="div_inputs">
-            <div className="div_descricao_valor_exemplo">
-              <label className="label_descricao" htmlFor="descricao">
+            <div className="div_description_value_example">
+              <label className="label_description" htmlFor="description">
                 Descrição
               </label>
-              <input
-                value={inputValue}
-                onChange={(event) => setInputvalue(event.target.value)}
-                className="input_descricao"
-                type="text"
-                placeholder="Digite aqui sua descrição"
-                id="descricao"
-                required="true"
+              <InputDescription
+                inputValue={inputValue}
+                setInputvalue={setInputvalue}
               />
-              <span className="span_exemplo">Ex:Compra de roupas</span>
-              <div className="inputs_label_valor_botao">
-                <div className="div_input_valor_tipo">
-                  <div className="div_label_input_valor">
-                    <label className="label_valor" htmlFor="valor">
+              <span className="span_example">Ex:Compra de roupas</span>
+              <div className="inputs_label_value_button">
+                <div className="div_input_value_type">
+                  <div className="div_label_input_value">
+                    <label className="label_value" htmlFor="value">
                       Valor
                     </label>
                   </div>
 
-                  <input
-                    value={inputValueValor}
-                    onChange={(event) => setinputValueValor(event.target.value)}
-                    className="input_valor"
-                    type="number"
-                    placeholder="R$"
-                    id="valor"
-                    required="true"
+                  <InputValue
+                    inputValueValue={inputValueValue}
+                    setinputValueValue={setinputValueValue}
                   />
                 </div>
-                <div className="div_label_tipo_valor">
-                  <label className="tipo_valor_label" htmlFor="tipo_valor">
+                <div className="div_label_type_value">
+                  <label className="type_value_label" htmlFor="type_value">
                     Tipo de Valor
                   </label>
-                  <select
-                    value={inputValorType}
-                    onChange={(event) => setinputValorType(event.target.value)}
-                    className="tipo_valor"
-                    id="tipo_valor"
-                  >
-                    <option value="entrada">Entrada</option>
-                    <option value="saida">Saída</option>
-                  </select>
+                  <Selects
+                    inputValorType={inputValorType}
+                    setinputValorType={setinputValorType}
+                  />
                 </div>
               </div>
-              <button type="submit" className="botao_inserir_valor">
-                Inserir Valor
-              </button>
+              <Buttons />
             </div>
           </div>
         </form>

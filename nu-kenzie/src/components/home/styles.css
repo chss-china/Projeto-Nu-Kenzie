@@ -1,14 +1,14 @@
 body {
   background: #1c1c1c;
 }
-.titulo_nu_kenzie_home {
+.title_nu_kenzie_home {
   color: white;
   margin-bottom: 4px;
 }
 .span_nu_home {
   color: #fd377e;
 }
-.titulo_financas {
+.title_finance {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
@@ -17,7 +17,7 @@ body {
   color: #ffffff;
   margin-bottom: 15px;
 }
-.span_forma_rapida {
+.span_quick_way {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
@@ -26,7 +26,7 @@ body {
   color: #ffffff;
   margin-bottom: 24px;
 }
-.botao_iniciar_home {
+.button_start_home {
   padding: 13px 20px;
   gap: 10px;
   background: #fd377e;
@@ -42,30 +42,30 @@ body {
   color: #ffffff;
 }
 @media (max-width: 700px) {
-  .botao_iniciar_home {
+  .button_start_home {
     width: 150%;
     margin-left: -70px;
   }
 }
-.div_titulos_botao_home {
+.div_title_button_home {
   display: flex;
   flex-direction: column;
   margin-right: -200px;
   margin: 0 auto;
 }
 @media (max-width: 700px) {
-  .div_titulos_botao_home {
+  .div_title_button_home {
     margin-left: 100px;
     margin: 0 auto;
   }
 }
-.div_tudo_home {
+.div_everything_home {
   display: flex;
   margin-top: 20px;
   align-items: center;
 }
 @media (max-width: 700px) {
-  .div_tudo_home {
+  .div_everything_home {
     flex-direction: column;
   }
 }

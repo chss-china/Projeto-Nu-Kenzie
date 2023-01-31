@@ -1,29 +1,46 @@
 import "./App.css";
+import { v4 as uuidv4 } from "uuid";
+
 import { useState } from "react";
-import Lista from "./components/list";
+import List from "./components/list";
+
 import Header from "./components/headers/index";
+
 import Form from "./components/form";
-import Renderformulario from "./components/render formulario";
-import Valortotal from "./components/totalmoney";
+
+import Valuetotal from "./components/totalmoney";
 import Home from "./components/home/index";
 function App() {
   const [listTransactions, setListTransactions] = useState([
-    { description: "Salário recebido", type: "entrada", value: 2500 },
-    { description: "Conta de luz", type: "saída", value: 150 },
-    { description: "Mensalidade da faculdade", type: "saída", value: 700 },
-    { description: "Hora extra do trabalho", type: "entrada", value: 200 },
+    {
+      description: "Salário recebido",
+      type: "entrada",
+      value: 2500,
+      id: uuidv4(),
+    },
+    { description: "Conta de luz", type: "saída", value: 150, id: uuidv4() },
+    {
+      description: "Mensalidade da faculdade",
+      type: "saída",
+      value: 700,
+      id: uuidv4(),
+    },
+    {
+      description: "Hora extra do trabalho",
+      type: "entrada",
+      value: 200,
+      id: uuidv4(),
+    },
   ]);
-  function adicionar_entradas(Form) {
+  function add_entries(Form) {
     setListTransactions([...listTransactions, Form]);
     console.log(listTransactions);
   }
-  function removeItens(elementoClicado) {
-    console.log(elementoClicado);
-    const filtrar_lista = listTransactions.filter(
-      (lista) => lista.description !== elementoClicado
-    );
-    setListTransactions(filtrar_lista);
-    console.log(filtrar_lista);
+  function removeItems(MyListId) {
+    console.log(MyListId);
+    const filter_list = listTransactions.filter((list) => list.id !== MyListId);
+    setListTransactions(filter_list);
+    console.log(filter_list);
   }
   const [page, setPage] = useState(true);
   console.log(listTransactions);
@@ -32,21 +49,21 @@ function App() {
       <div className="App">
         <Header setPage={setPage} />
         <div className="App-header">
-          <div className="div_inputs_lista">
-            <div className="div_form_valor_total">
+          <div className="div_inputs_list">
+            <div className="div_form_amount">
               <Form
                 listTransactions={listTransactions}
                 setListTransactions={setListTransactions}
               />
-              <Valortotal
+              <Valuetotal
                 listTransactions={listTransactions}
                 setListTransactions={setListTransactions}
               />
             </div>
-            <div className="div_lista">
-              <Lista
+            <div className="div_list">
+              <List
                 listTransactions={listTransactions}
-                removeItens={removeItens}
+                removeItems={removeItems}
               />
             </div>
           </div>

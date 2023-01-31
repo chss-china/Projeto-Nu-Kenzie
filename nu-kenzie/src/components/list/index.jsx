@@ -1,21 +1,21 @@
 import "./styles.css";
 import Card from "../cards";
-import Nocard from "../imagens/NoCard.png";
-function Lista({ listTransactions, removeItens }) {
+import Nocard from "../images/NoCard.png";
+function List({ listTransactions, removeItems }) {
   console.log(listTransactions);
   return (
     <>
-      <h3 className="titulo_resumo_financeiro">Resumo Financeiro</h3>
+      <h3 className="titulo_financial_Summary">Resumo Financeiro</h3>
       <ul>
         {listTransactions.length == 0 ? (
           <>
-            <h1 className="titulo_sem_lancamento">
+            <h1 className="title_without_launchc">
               Você ainda não possui nenhum lançamento
             </h1>
             <img
-              clasName="img_sem_lancamento"
+              className="img_without_launchc"
               src={Nocard}
-              alt="img_sem_lancamento"
+              alt="img_without_launchc"
             />
           </>
         ) : (
@@ -24,7 +24,7 @@ function Lista({ listTransactions, removeItens }) {
               return (
                 <Card
                   listTransactions={listTransactions}
-                  removeItens={removeItens}
+                  removeItems={removeItems}
                   transaction={transaction}
                   key={index}
                 />
@@ -36,4 +36,4 @@ function Lista({ listTransactions, removeItens }) {
     </>
   );
 }
-export default Lista;
+export default List;

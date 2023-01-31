@@ -1,17 +1,12 @@
 import "./styles.css";
+import { ButtonsHeader } from "../buttons";
 function Header({ setPage }) {
   return (
     <div className="div_header">
-      <h1 className="titulo_kenzie">
-        <span className="span_nu_titulo">Nu</span> Kenzie
+      <h1 className="title_kenzie">
+        <span className="span_nu_title">Nu</span> Kenzie
       </h1>
-      <button
-        type="button"
-        onClick={() => setPage(true)}
-        className="span_inicio"
-      >
-        Inicio
-      </button>
+      <ButtonsHeader setPage={setPage} />
     </div>
   );
 }
