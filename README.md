@@ -15,7 +15,7 @@ Projeto desenvolvido durante o curso da Kenzie Academy Brasil como parte do curr
 
 - Visualização do saldo atual.
 - Adição de novas transações 
-- istagem das transações realizadas.
+- Listagem das transações realizadas.
 - Atualização automática do saldo após transações
 - Classificação das transações por tipo (receita ou despesa)
 
