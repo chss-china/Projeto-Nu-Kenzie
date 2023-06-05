@@ -1,5 +1,5 @@
 
-# Projeto-Nu-Kenzie
+# Projeto Nu Kenzie
 
 ## Descrição
 
